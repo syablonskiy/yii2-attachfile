@@ -1,0 +1,42 @@
+.file-list {
+    margin-top: 5px;
+    display: table;
+    width: 100%;
+    font-size: 14px;
+    background-color: rgba(221, 234, 255, .3);
+}
+
+.info-row {
+    display: table-row;
+}
+
+.info-cell {
+    padding: 6px;
+    display: table-cell;
+    border-top: 1px dotted #D5E4F1;
+}
+
+.info-cell.name {
+    width: 55%;
+    padding-left: 10px;
+}
+
+.info-cell.size {
+    width: 25%;
+    text-align: center;
+}
+
+.info-cell.download {
+    width: 20%;
+    text-align: center;
+}
+
+.info-row:first-child .info-cell {
+    border-top: none;
+    /*text-align: right;*/
+    padding: 6px 6px 6px 10px;
+    font-weight: 400;
+    color: #667E99;
+    background-color: transparent;
+    vertical-align: middle;
+}

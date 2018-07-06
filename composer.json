@@ -1,0 +1,21 @@
+{
+    "name": "syablonskiy/yii2-attachfile",
+    "description": "Package for attaching files using ajax",
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Yablonskiy",
+            "email": "serega8989@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+    	"psr-4": {
+    		"syablonskiy\\attachfile\\": "src"
+    	}
+    }
+}
