@@ -12,6 +12,9 @@ use yii\helpers\Html;
         <div class="info-cell name">Имя файла</div>
         <div class="info-cell size">Размер</div>
         <div class="info-cell download">Скачать</div>
+        <?php if ($allowDeletion):?>
+        <div class="info-cell download">Удалить</div>
+        <?php endif;?>
     </div>
     <?php foreach ($files as $file): ?>
         <div class="info-row">
@@ -24,6 +27,11 @@ use yii\helpers\Html;
                     ['title' => 'Скачать файл']
                 ) ?>
             </div>
+            <?php if ($allowDeletion):?>
+                <div class="info-cell">
+                    <input type="checkbox" name="files_for_deletion[]" value="<?= $file->id ?>">
+                </div>
+            <?php endif;?>
         </div>
     <?php endforeach; ?>
 </div>

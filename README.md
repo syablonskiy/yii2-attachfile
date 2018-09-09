@@ -60,5 +60,11 @@
 
 2. Отображение прикреплённых файлов модели `$model`
 ```php
-<?= \syablonskiy\attachfile\widgets\FilesListWidget::widget(['model' => $model]) ?>
+<?= \syablonskiy\attachfile\widgets\FilesListWidget::widget(
+        [
+            'model' => $model,
+            'allowDeletion' => true //default 'false'
+        ]
+    ) ?>
 ```
+Опция 'allowDeletion' добавляет возможность отмечать файлы для удаления

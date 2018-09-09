@@ -16,6 +16,7 @@ class FilesListWidget extends Widget
     use ModuleTrait;
 
     public $model;
+    public $allowDeletion = false;
 
     public function init()
     {
@@ -30,7 +31,8 @@ class FilesListWidget extends Widget
 
         return $this->render('filesListWidget', [
             'files' => $files,
-            'moduleName' => $moduleName
+            'moduleName' => $moduleName,
+            'allowDeletion' => $this->allowDeletion
         ]);
     }
 }
